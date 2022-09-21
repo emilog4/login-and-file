@@ -16,6 +16,7 @@ $password = $_POST["password"];
 
 
 $validateLogin = fopen("loginformation.txt", "a+") or die("Unable to open file!");
+echo gettype($validateLogin);
 
 function checkExistingLogin($validationInformation, $username, $password){
     $loginStatus = false;
